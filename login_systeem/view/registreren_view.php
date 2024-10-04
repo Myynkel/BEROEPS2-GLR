@@ -11,7 +11,7 @@
 
 <section class="registreer-form">
     <h2>Registreren</h2>
-    <form action="" method="post">
+    <form action="../login_systeem/registreer.php" method="post">
         <input type="text" name="email" placeholder="Email..." required>
         <input type="password" name="pwd" placeholder="Wachtwoord..." required>
         <button type="submit" name="submit">Registreren</button>
