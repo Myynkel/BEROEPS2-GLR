@@ -95,6 +95,11 @@ h1 {
     gap: 20px;
 }
 
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .recipe-card {
     background-color: white;
     border-radius: 8px;
