@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require '../config.php';
 
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
         if ($user) {
             if (password_verify($pwd, $user['wachtwoord'])) {
                 echo "Inloggen geslaagd!";
-                // Hier kun je de sessie starten of de gebruiker doorverwijzen naar een andere pagina
+                header('location: ../index.html');
             } else {
                 echo "Onjuist wachtwoord.";
             }
