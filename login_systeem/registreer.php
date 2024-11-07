@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 
 
         if ($stmt->execute()) {
-            header("Location: login.php"); // Direct doorsturen naar login
+            header("Location: ../index.html"); // Direct doorsturen naar login
             exit();
         } else {
             echo "Fout bij registratie.";
