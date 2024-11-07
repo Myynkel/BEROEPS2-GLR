@@ -13,17 +13,18 @@ nav{
     box-shadow: 0 0 10px rgba(0, 0, 0, .09);
 }
 
-.navbar-brand{
-    font-size: 18px;
-    padding: 25px 40px 25px 50px;
-}
-
 .nav-link{
     padding: 0 50px;
     margin-right: 30px;
     font-size: 16px;
     color: black;
     font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
 }
 
 
@@ -236,5 +237,121 @@ h1 {
 
     .login {
         display: none;
+    }
+}
+
+
+/* Modal van login/registreren */
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.nav-item .nav-link {
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    color: #007bff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-close {
+    height: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+/* Modal aanpassen voor mobiel */
+@media (max-width: 768px) {
+    .modal-dialog {
+        max-width: 90%;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 8px;
     }
 }
