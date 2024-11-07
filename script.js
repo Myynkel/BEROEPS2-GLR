@@ -37,19 +37,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 7500);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const recipeCards = document.querySelectorAll(".recipe-card");
+// document.addEventListener("DOMContentLoaded", function () {
+    // const recipeCards = document.querySelectorAll(".recipe-card");
 
-    recipeCards.forEach(card => {
-        card.addEventListener("click", function () {
-            const title = card.getAttribute("data-recipe-title");
-            const content = card.getAttribute("data-recipe-content");
+    // recipeCards.forEach(card => {
+        // card.addEventListener("click", function () {
+            // const title = card.getAttribute("data-recipe-title");
+            // const content = card.getAttribute("data-recipe-content");
 
-            document.getElementById("recipeModalLabel").innerText = title;
-            document.getElementById("recipeContent").innerText = content;
+            // document.getElementById("recipeModalLabel").innerText = title;
+            // document.getElementById("recipeContent").innerText = content;
 
-            const recipeModal = new bootstrap.Modal(document.getElementById("recipeModal"));
-            recipeModal.show();
-        });
-    });
-});
+            // const recipeModal = new bootstrap.Modal(document.getElementById("recipeModal"));
+            // recipeModal.show();
+        // });
+    // });
+// });
